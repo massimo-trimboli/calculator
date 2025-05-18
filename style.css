@@ -1,0 +1,129 @@
+body{padding: 20px;}
+.calculator{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.frame{
+    background-color: rgb(94, 94, 94);
+    border: 5px solid black;
+    width: 25rem;
+    height: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* screen */
+article.screen{
+    width: 100%;
+    height: 4rem;
+    background-color: green;
+    border: 5px solid black;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+@font-face {
+    font-family: "calculator";
+    src: url(font/Calculator.ttf);
+}
+.screen h2{
+    height: auto;
+
+    overflow-y: hidden;
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    font-family: "calculator";
+    font-size:  40px;
+    padding-left: 5px;
+
+    user-select: none;
+}
+
+/* buttons */
+article.buttons{
+    display: flex;
+    flex-flow: row nowrap;
+}
+/* numbers */
+article.buttons .numbers{
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.buttons .numbers div{
+    border: 3px solid black;
+    width: 5rem;
+    height: 5rem;
+    margin: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* symbols */
+.buttons .other-buttons{
+    width: 30%;
+    /* height: 10rem; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.buttons .other-buttons div{
+    border: 3px solid black;
+    width: 3.19rem;
+    height: 3.19rem;
+    margin: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* all buttons */
+.buttons .numbers div{
+    background-color: rgb(56, 56, 56);
+    transition: background-color .1s;
+}
+.buttons .numbers div:hover{
+    background-color: rgb(33, 33, 33);
+}
+.buttons .numbers div:active{
+    background-color: rgb(12, 12, 12);
+}
+
+.buttons .other-buttons div{
+    background-color: rgb(56, 56, 56);
+    transition: background-color .1s;
+}
+.buttons .other-buttons div:hover{
+    background-color: rgb(33, 33, 33);
+}
+.buttons .other-buttons div:active{
+    background-color: rgb(12, 12, 12);
+}
+.buttons div p{
+    user-select: none;
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: rgb(216, 216, 216);
+}
