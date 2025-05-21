@@ -4,7 +4,7 @@ for(let i=9; i>-1; i--){
     nums.push(i)
 }
 //add parentheses
-nums.push("(",")");
+nums.push("(",")",".");
 
 //symbols
 let symbols = [
