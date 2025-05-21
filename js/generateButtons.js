@@ -1,8 +1,8 @@
 //generate numbers
-let nums = []
+/*let nums = []
 for(let i=9; i>-1; i--){
     nums.push(i)
-}
+}*/
 nums = [];
 nums.push(7,8,9,4,5,6,1,2,3,0)
 //add parentheses
